@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.VFX;
 
 [RequireComponent(typeof(VisualEffect))]
-public class SlideParticleEffect : MonoBehaviour
+public class TextureBinder : MonoBehaviour
 {
     [SerializeField] private Texture _texture = null;
     [SerializeField] private float _duration = 1f;
@@ -64,6 +64,7 @@ public class SlideParticleEffect : MonoBehaviour
     private void ResetParticle()
     {
         _isStarted = false;
+        _time = 0;
         _vfx.SetFloat("Time", 0);
         _vfx.SendEvent("OnPlay");
     }
