@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.VFX;
 
 [RequireComponent(typeof(VisualEffect))]
-public class TextureBinder : MonoBehaviour
+public class SlideParticleEffect : MonoBehaviour
 {
     [SerializeField] private Texture _texture = null;
     [SerializeField] private float _duration = 1f;
